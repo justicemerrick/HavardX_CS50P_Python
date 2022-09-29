@@ -1,19 +1,29 @@
-# Problem 2: Creating a math calculator
-# Store the user input of 2 numbers and the operator
-num1, operator, num2 = input('Enter calcution: ').split()
+# A program that rates how important a Birthday is
 
-# Convert the strings into integers
-num1 = int(num1)
-num2 = int(num2)
+# We'll provide different output based on age
+# 1-18 -> Important
+# 21, 50, >65 -> Important
+# All others -> Not important
 
-# If + then we need to produce output based on addition
-if operator == "+":
-    print("{} + {} = {}".format(num1, num2, num1 + num2))
-elif operator == "-":
-    print("{} - {} = {}".format(num1, num2, num1 - num2))
-elif operator == "*":
-    print("{} * {} = {}".format(num1, num2, num1 * num2))
-elif operator == "/":
-    print("{} / {} = {}".format(num1, num2, num1 / num2))
+# Receive age and store in age
+age = eval(input("Enter age: "))
+
+# and : if both true it returns true
+# or : if either condition is true then true
+# not : convert a true condition into a false
+
+# if age is both greater than or equal to 1 and less than or equal to 1 and less than or equal to 18 its important
+if (age >= 1) and (age <= 18):
+    print("Important Birthday")
+
+# if age is either 21 or 50 its important
+if (age == 21) or (age == 50):
+    print("Important Birthday")
+
+# We check if age is less than 65, then convert True to False and vice versa
+elif not(age < 65):
+    print("Important Birthday")
+
+# Else not important
 else:
-    print("beware! This calculator only operates + - / or *")
+    print("sorry, not important birthday")
