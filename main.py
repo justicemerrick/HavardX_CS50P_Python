@@ -1,16 +1,19 @@
-# Problem: Receive miles and convert to kilometers
-# 1. Ask the user to input miles and assign it to the miles variable
-miles = input('Enter miles: ')
+# Problem 2: Creating a math calculator
+# Store the user input of 2 numbers and the operator
+num1, operator, num2 = input('Enter calcution: ').split()
 
-# 2. Convert from string to int
-miles = int(miles)
+# Convert the strings into integers
+num1 = int(num1)
+num2 = int(num2)
 
-# kilometers = miles * 1.60934
-# 3. Perform calculations by multiplying 1.60934 times miles
-Km = miles * 1.60934
-
-# Print results using format
-print("{} miles equals {} kilometers".format(miles, Km))
-
-# Enter miles 5
-# 5
+# If + then we need to produce output based on addition
+if operator == "+":
+    print("{} + {} = {}".format(num1, num2, num1 + num2))
+elif operator == "-":
+    print("{} - {} = {}".format(num1, num2, num1 - num2))
+elif operator == "*":
+    print("{} * {} = {}".format(num1, num2, num1 * num2))
+elif operator == "/":
+    print("{} / {} = {}".format(num1, num2, num1 / num2))
+else:
+    print("beware! This calculator only operates + - / or *")
