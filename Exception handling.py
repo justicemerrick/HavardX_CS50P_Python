@@ -3,7 +3,7 @@ try:
 
     print(aList[3])
 except IndexError:
-    print("Sorry that index doesn't exist")
+    print("Sorry that index doesnt exist")
 
 except:
     print("An unknown error occured")
