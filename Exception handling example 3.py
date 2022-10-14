@@ -8,7 +8,7 @@ try:
     print("{} / {} = {}".format(num1, num2, quotient))
 
 except ZeroDivisionError:
-    print("You can't divide by zero")
+    print("You cannot divide by zero")
 
 else:
     print("you didn't raise an exception")
