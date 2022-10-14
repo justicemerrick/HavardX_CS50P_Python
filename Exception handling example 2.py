@@ -4,7 +4,7 @@ class DogNameError(Exception):
         Exception.__init__(self, *args, **kwargs)
 
 try:
-    dogName = input("What is your dogs name: ")
+    dogName = input("What is your dog's name: ")
 
     if any(char.isdigit() for char in dogName):
 
