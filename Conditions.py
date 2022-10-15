@@ -1,3 +1,5 @@
+#a basic pupil grading program
+
 score = int(input("score: "))
 
 if score >= 90:
