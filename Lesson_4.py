@@ -1,6 +1,6 @@
 # A program that rates how important a Birthday is
 
-# We'll provide different output based on age
+# We'll provide different output based on Age
 # 1-18 -> Important
 # 21, 50, >65 -> Important
 # All others -> Not important
