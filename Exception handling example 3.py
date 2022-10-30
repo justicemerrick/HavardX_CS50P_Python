@@ -1,4 +1,4 @@
-# this program will print even if an exception is triggered or not
+# this program will print even if an exception is triggered or not.
 
 num1, num2 = input("Enter 2 values to divide: ").split()
 
